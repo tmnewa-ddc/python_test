@@ -1,0 +1,27 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+coverage = "*"
+pytest-mock = "*"
+
+[packages]
+attrs = "==19.3.0"
+click = "==7.1.2"
+itsdangerous = "==1.1.0"
+more-itertools = "==8.4.0"
+pluggy = "==0.13.1"
+py = "==1.9.0"
+pyparsing = "==2.4.7"
+six = "==1.15.0"
+wcwidth = "==0.2.5"
+Flask = "==1.1.2"
+Jinja2 = "==2.11.2"
+MarkupSafe = "==1.1.1"
+Werkzeug = "==1.0.1"
+
+[requires]
+python_version = "3.8"
