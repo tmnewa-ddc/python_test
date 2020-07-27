@@ -6,6 +6,7 @@ import cpu
 
 class TestInfo(unittest.TestCase):
 
+    @unittest.skip("no mock example, skip")
     def test_cpu(self):
         # arrange
 
