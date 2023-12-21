@@ -69,3 +69,4 @@ exit virtualenv
 
 `open htmlcov/index.html`
 
+`pytest  --cov=./ --cov-report=html`
