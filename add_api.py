@@ -11,9 +11,12 @@ def add():
     if login == "true":
         a = request.args.get('a')
         b = request.args.get('b')
-        if a is not None and b is not None:
-            a, b = int(a), int(b)
-            return make_response(jsonify({"sum": a + b}), 200)
+        if a is not None:
+            if b is not None:
+                a, b = int(a), int(b)
+                return make_response(jsonify({"sum": a + b}), 200)
+            else:
+                return make_response(jsonify(), 400)
         else:
             return make_response(jsonify(), 400)
     else:
